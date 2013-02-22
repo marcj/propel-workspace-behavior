@@ -1,0 +1,16 @@
+{
+    "name": "marcj/propel-workspace-behavior",
+    "description": "A behavior for propel to store entries under different workspaces.",
+    "keywords": ["Propel", "Workspace"],
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "MArc J. Schmidt",
+            "homepage": "https://github.com/MArcJ",
+            "email": "marc@kryn.org"
+        }
+    ],
+    "autoload": {
+        "classmap": ["WorkspaceBehavior.class.php", "WorkspaceBehaviorPeer.class.php"]
+    }
+}
