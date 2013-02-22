@@ -281,15 +281,12 @@ public function filterByWorkspace(\$workspaceId){
     public function preSelectQuery($builder){
         $this->builder = $builder;
 
-        //$current = $this->getColumnConstant($this->prefix.'current');
-        $id = $this->getColumnConstant($this->prefix.'id');
-
         $table = $this->getTable();
         $id = $table->getColumn($this->prefix.'id')->getPhpName();
 
-        return "//HI WAS GEHT
+        return "
 
-\$this->filterBy$id(".$this->workspaceGetter.");
+\$this->filterBy$id(call_user_func_array(".var_export($this->workspaceGetter, true).", array()));
 
 ";
     }
