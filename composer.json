@@ -11,6 +11,6 @@
         }
     ],
     "autoload": {
-        "classmap": ["WorkspaceBehavior.class.php", "WorkspaceBehaviorPeer.class.php"]
+        "classmap": ["WorkspaceBehavior.php", "WorkspaceBehaviorPeer.php"]
     }
 }
