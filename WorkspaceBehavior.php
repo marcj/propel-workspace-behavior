@@ -239,7 +239,7 @@ class WorkspaceBehavior extends Behavior
 
 //set default values
 if (\$this->isModified() && !\$this->isColumnModified(" . $this->getColumnConstant($this->prefix.'id', $builder) . "))
-    \$this->" . $this->getColumnSetter($this->prefix.'id') . "(".$this->workspaceGetter.");
+    \$this->" . $this->getColumnSetter($this->prefix.'id') . "(call_user_func_array(".var_export($this->workspaceGetter, true).", array()));
 
 if (\$this->isModified() && !\$this->isColumnModified(" . $this->getColumnConstant($this->prefix.'action', $builder) . "))
     \$this->" . $this->getColumnSetter($this->prefix.'action') . "(1); //created
