@@ -105,6 +105,7 @@ class WorkspaceBehavior extends Behavior
         $this->addVersionTable();
 
         $table->setBasePeer('\WorkspaceBehaviorPeer');
+        $table->setBaseClass('\WorkspaceBehaviorClass');
 
         /*
         //pk index
